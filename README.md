@@ -1,6 +1,6 @@
-## Konsep Dasar Game
+# Konsep Dasar Game
 
-# Elemen Game
+## Elemen Game
 
 - karakter
 - background
