@@ -1,6 +1,15 @@
-# Konsep Dasar Game
+## Konsep Dasar Game
 
-**Penjelasan Elemen**
+# Elemen Game
+
+- karakter
+- background
+- ground, atau tempat jalan karakternya
+- poin
+- obstacle
+- level
+  
+## Penjelasan Elemen
 
 1. **Karakter**
 - sumbu x statis, karena yang bergerak itu `Background`-nya
