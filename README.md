@@ -1,3 +1,13 @@
+# TUTORIAL TESTING
+
+### 1. bikin folder baru di windows explorer 
+### 2. buka vscode di folder itu
+### 3. buka terminal
+### 4. di terminal, ketik: `git clone https://github.com/FredyRamadhan/gameJavaPBO/`
+### 5. buka foldernya di greenfoot
+
+### LANJUT::
+
 # Konsep Dasar Game
 
 ## Elemen Game
