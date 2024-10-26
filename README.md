@@ -4,7 +4,8 @@
 ### 2. buka powershell di folder itu
 ### 3. inisialisasi git: ketik  `git init` di powershell
 ### 4. buka github, bikin fork, copy link fork-nya
-### 5. di powershell `ketik: git remote add origin <link fork-nya>` eg: `git remote add origin https://github.com/FredyRamadhan/gameJavaPBO/`
+### 5. di powershell `ketik: git remote add origin <link fork-nya>` 
+    eg: `git remote add origin https://github.com/FredyRamadhan/gameJavaPBO/`
 ### 6. ketik: `git pull`
 ### 7. buka foldernya di greenfoot
 
