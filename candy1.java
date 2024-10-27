@@ -1,11 +1,5 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;
 
-/**
- * Write a description of class candy1 here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class candy1 extends candy
 {
     void cetakbaru(){
