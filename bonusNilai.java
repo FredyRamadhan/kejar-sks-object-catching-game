@@ -10,10 +10,14 @@ public class bonusNilai extends dapatNilai
 {
     void spawnBaru(){
         bonusNilai bonusNilai = new bonusNilai();
+        Greenfoot.delay(4);
         getWorld().addObject(bonusNilai,Greenfoot.getRandomNumber(300),0);
     }
     double tambahNilai(){
-        return 1.0;
+        return 1;
+    }
+    int isMasukSks(){
+        return 0;
     }
     void maju(){
         setLocation(getX(), getY()+2);

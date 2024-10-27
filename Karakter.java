@@ -23,7 +23,7 @@ public class Karakter extends Actor
             getWorld().removeObject(this);
         }else if(SKSdiambil.value==24) {
             Greenfoot.delay(1);
-            Greenfoot.setWorld(new Endpage());
+            Greenfoot.setWorld(new Endpage2());
             getWorld().removeObject(this);
         }
     }    

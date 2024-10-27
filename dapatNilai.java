@@ -5,11 +5,12 @@ public abstract class dapatNilai extends Actor
     abstract void spawnBaru();
     abstract double tambahNilai();
     abstract void maju();
+    abstract int isMasukSks();
     
     void dimakan(){
         Nilai.add(tambahNilai());
-        IPK.add(tambahNilai(), 1);
-        SKSdiambil.add(1);
+        IPK.add(tambahNilai(), isMasukSks());
+        SKSdiambil.add(isMasukSks());
         
         spawnBaru();
         getWorld().removeObject(this);

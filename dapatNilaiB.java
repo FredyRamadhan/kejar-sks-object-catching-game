@@ -11,6 +11,9 @@ public class dapatNilaiB extends dapatNilai
     double tambahNilai(){
         return 3.0;
     }
+    int isMasukSks(){
+        return 1;
+    }
     void maju(){
         setLocation(getX()+random, getY()+4);
     }

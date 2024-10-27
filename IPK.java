@@ -61,9 +61,9 @@ public class IPK extends Actor
         target += SKS;
     }
 
-    public static int getValue()
+    public static double getValue()
     {
-        return target;
+        return (Math.round(IPK * 100.0) / 100.0);
     }
 
     private void updateImage()
