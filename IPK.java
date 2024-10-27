@@ -53,7 +53,7 @@ public class IPK extends Actor
     private void IPK() 
     {
         double nilaiIPK = nilai / (double) value;
-        IPK = Math.round(nilaiIPK * 100.0) / 100.0;
+        IPK = nilaiIPK;
     }
     public static void add(double nilai, int SKSdiambil)
     {
@@ -69,7 +69,7 @@ public class IPK extends Actor
     private void updateImage()
     {
         GreenfootImage image = new GreenfootImage(background);
-        GreenfootImage text = new GreenfootImage(prefix + IPK, 22, Color.BLACK, transparent);
+        GreenfootImage text = new GreenfootImage(prefix + (Math.round(IPK * 100.0) / 100.0), 22, Color.BLACK, transparent);
         
         if (text.getWidth() > image.getWidth() - 20)
         {
