@@ -1,14 +1,9 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*; 
 
-/**
- * Write a description of class MyWorld here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class MyWorld extends World {
-    private Counter counter; // Instance variable untuk Counter
-    private Counter2 counter2; // Instance variable untuk Counter2
+    private Nilai Nilai; // Instance variable untuk Counter
+    private MaxPelanggaran MaxPelanggaran; // Instance variable untuk Counter2
+    private IPK IPK;
 
     /**
      * Constructor for objects of class MyWorld.
@@ -18,53 +13,61 @@ public class MyWorld extends World {
         super(1280, 720, 1);
         
         // Inisialisasi counter dan counter2
-        counter = new Counter(""); 
-        counter2 = new Counter2("HP : "); 
+        Nilai = new Nilai("Nilai: "); 
+        MaxPelanggaran = new MaxPelanggaran("HP : "); 
+        IPK = new IPK("IPK: ");
         
-        // Tambahkan counter dan counter2 ke dunia
-        addObject(counter, 300, 70);
-        addObject(counter2, 1000, 70);
         
-        prepare(); // Panggil metode prepare untuk menambahkan objek lain
+        // Tambahkan counter dan counter2 ke world
+        addObject(Nilai, 300, 70);
+        addObject(IPK, 650, 70);
+        addObject(MaxPelanggaran, 1000, 70);
+        
+        
+        mulai(); // Panggil metode mulai untuk menambahkan objek lain
     }
     
     // Getter untuk Counter
-    public Counter getCounter() {
-        return counter; // Mengembalikan instance variable counter
+    public Nilai getNilai() {
+        return Nilai; // Mengembalikan instance variable counter
     }
 
     // Getter untuk Counter2
-    public Counter2 getCounter2() {
-        return counter2; // Mengembalikan instance variable counter2
+    public MaxPelanggaran MaxPelanggaran() {
+        return MaxPelanggaran;
     }
 
     /**
-     * Prepare the world for the start of the program.
-     * That is: create the initial objects and add them to the world.
+     * mulai program.
+     * buat beberapa objek pertama untuk memulai game nya
      */
-    private void prepare() {
+    private void mulai() {
         //inisiasi karakter
-        kodok kodok = new kodok();
-        addObject(kodok, 600, 650);
+        Karakter Karakter = new Karakter();
+        addObject(Karakter, 600, 600);
         
         //inisialisasi poin
-        candy1 candy1 = new candy1();
-        addObject(candy1, 959, 69);
-        candy2 candy2 = new candy2();
-        addObject(candy2, 112, 139);
-        candy3 candy3 = new candy3();
-        addObject(candy3, 357, 43);
-        candy4 candy4 = new candy4();
-        addObject(candy4, 585, 203);
-        candy5 candy5 = new candy5();
-        addObject(candy5, 642, 227);
+        dapatNilaiA dapatNilaiA = new dapatNilaiA();
+        addObject(dapatNilaiA, Greenfoot.getRandomNumber(1180)+100, 69);
+        
+        dapatNilaiB dapatNilaiB = new dapatNilaiB();
+        addObject(dapatNilaiB, Greenfoot.getRandomNumber(1180)+100, 139);
+        
+        dapatNilaiC dapatNilaiC = new dapatNilaiC();
+        addObject(dapatNilaiC, Greenfoot.getRandomNumber(1180)+100, 43);
+        
+        bonusNilai bonusNilai  = new bonusNilai ();
+        addObject(bonusNilai, Greenfoot.getRandomNumber(1180)+100, 203);
+        addObject(bonusNilai, Greenfoot.getRandomNumber(1180)+100, 227);
         
         //inisialisasi poin pengurang
-        no1 no1 = new no1();
-        addObject(no1, 599, 129);
-        no2 no2 = new no2();
-        addObject(no2, 1100, 15);
-        no3 no3 = new no3();
-        addObject(no3, 240, 249);
+        Pelanggaran1 Pelanggaran1 = new Pelanggaran1();
+        addObject(Pelanggaran1, Greenfoot.getRandomNumber(1180)+100, Greenfoot.getRandomNumber(300));
+        
+        Pelanggaran2 Pelanggaran2 = new Pelanggaran2();
+        addObject(Pelanggaran2, Greenfoot.getRandomNumber(1180)+100, Greenfoot.getRandomNumber(300));
+        
+        Pelanggaran3 Pelanggaran3 = new Pelanggaran3();
+        addObject(Pelanggaran3, Greenfoot.getRandomNumber(1180)+100, Greenfoot.getRandomNumber(300));
     }
 }

@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=dapatNilai
+comment1.params=
+comment1.target=void\ spawnBaru()
+comment2.params=
+comment2.target=double\ tambahNilai()
+comment3.params=
+comment3.target=void\ maju()
+comment4.params=
+comment4.target=void\ dimakan()
+comment5.params=
+comment5.target=void\ act()
+numComments=6
