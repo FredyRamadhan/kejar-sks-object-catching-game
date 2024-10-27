@@ -26,7 +26,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  *     }
  * }
  * </pre>
- * 
+ * halo halo
  * @author Neil Brown and Michael Kölling 
  * @version 1.0
  */

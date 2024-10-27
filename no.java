@@ -1,11 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class no here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public abstract class no extends Actor
 {
     abstract void cetakbaru();
@@ -19,8 +13,8 @@ public abstract class no extends Actor
     public void act() 
     {
         maju();
-        if(getY()>=499){
-            setLocation(Greenfoot.getRandomNumber(300),0);
+        if(getY()>=719){
+            setLocation(Greenfoot.getRandomNumber(1280),0);
         }
         if(isTouching(kodok.class)){
             Counter2.add(-1);
