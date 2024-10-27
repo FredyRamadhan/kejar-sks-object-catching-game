@@ -16,7 +16,7 @@ public abstract class candy extends Actor
     {
         maju();
         if(getY()>=719){
-            setLocation(Greenfoot.getRandomNumber(1280),0);
+            setLocation(Greenfoot.getRandomNumber(1180)+100,0);
         }
         if(isTouching(kodok.class)){
             dimakan();
