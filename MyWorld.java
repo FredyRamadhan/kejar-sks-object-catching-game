@@ -22,8 +22,8 @@ public class MyWorld extends World {
         counter2 = new Counter2("HP : "); 
         
         // Tambahkan counter dan counter2 ke dunia
-        addObject(counter, 845, 478);
-        addObject(counter2, 246, 478);
+        addObject(counter, 300, 70);
+        addObject(counter2, 1000, 70);
         
         prepare(); // Panggil metode prepare untuk menambahkan objek lain
     }
@@ -43,23 +43,28 @@ public class MyWorld extends World {
      * That is: create the initial objects and add them to the world.
      */
     private void prepare() {
+        //inisiasi karakter
         kodok kodok = new kodok();
-        addObject(kodok, 1200, 600);
+        addObject(kodok, 600, 650);
+        
+        //inisialisasi poin
         candy1 candy1 = new candy1();
         addObject(candy1, 959, 69);
         candy2 candy2 = new candy2();
-        addObject(candy2, 12, 139);
+        addObject(candy2, 112, 139);
         candy3 candy3 = new candy3();
         addObject(candy3, 357, 43);
         candy4 candy4 = new candy4();
         addObject(candy4, 585, 203);
         candy5 candy5 = new candy5();
         addObject(candy5, 642, 227);
+        
+        //inisialisasi poin pengurang
         no1 no1 = new no1();
-        addObject(no1, 889, 129);
+        addObject(no1, 599, 129);
         no2 no2 = new no2();
-        addObject(no2, 40, 15);
+        addObject(no2, 1100, 15);
         no3 no3 = new no3();
-        addObject(no3, 790, 249);
+        addObject(no3, 240, 249);
     }
 }
