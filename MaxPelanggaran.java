@@ -16,8 +16,8 @@ public class MaxPelanggaran extends Actor
     public MaxPelanggaran(String prefix)
     {
         background = getImage(); 
-        value = 5;
-        target = 5;
+        value = 10;
+        target = 10;
         this.prefix = prefix;
         updateImage();
     }

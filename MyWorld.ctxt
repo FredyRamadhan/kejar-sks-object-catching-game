@@ -2,12 +2,7 @@
 comment0.target=MyWorld
 comment1.params=
 comment1.target=MyWorld()
-comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ MyWorld.\r\n
 comment2.params=
-comment2.target=Nilai\ getNilai()
-comment3.params=
-comment3.target=MaxPelanggaran\ MaxPelanggaran()
-comment4.params=
-comment4.target=void\ mulai()
-comment4.text=\r\n\ mulai\ program.\r\n\ buat\ beberapa\ objek\ pertama\ untuk\ memulai\ game\ nya\r\n
-numComments=5
+comment2.target=void\ mulai()
+comment2.text=\r\n\ mulai\ program.\r\n\ buat\ beberapa\ objek\ pertama\ untuk\ memulai\ game\ nya\r\n
+numComments=3

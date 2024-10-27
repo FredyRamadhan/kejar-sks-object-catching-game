@@ -1,20 +1,17 @@
 import greenfoot.*; 
 
 public class MyWorld extends World {
-    private Nilai Nilai; // Instance variable untuk Counter
-    private MaxPelanggaran MaxPelanggaran; // Instance variable untuk Counter2
+    private Nilai Nilai; // Instance variable untuk Nilai
+    private MaxPelanggaran MaxPelanggaran; // Instance variable untuk MaxPelanggaran
     private IPK IPK;
 
-    /**
-     * Constructor for objects of class MyWorld.
-     */
     public MyWorld() {    
         // Create a new world with 1280x720 cells with a cell size of 1x1 pixels.
         super(1280, 720, 1);
         
         // Inisialisasi counter dan counter2
         Nilai = new Nilai("Nilai: "); 
-        MaxPelanggaran = new MaxPelanggaran("HP : "); 
+        MaxPelanggaran = new MaxPelanggaran("Max Pelanggaran : "); 
         IPK = new IPK("IPK: ");
         
         
@@ -25,16 +22,6 @@ public class MyWorld extends World {
         
         
         mulai(); // Panggil metode mulai untuk menambahkan objek lain
-    }
-    
-    // Getter untuk Counter
-    public Nilai getNilai() {
-        return Nilai; // Mengembalikan instance variable counter
-    }
-
-    // Getter untuk Counter2
-    public MaxPelanggaran MaxPelanggaran() {
-        return MaxPelanggaran;
     }
 
     /**

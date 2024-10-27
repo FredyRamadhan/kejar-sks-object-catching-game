@@ -16,7 +16,7 @@ public class bonusNilai extends dapatNilai
         return 1.0;
     }
     void maju(){
-        setLocation(getX(), getY()+3);
+        setLocation(getX(), getY()+2);
     }
     
     public void act() 
