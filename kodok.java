@@ -10,7 +10,6 @@ public class kodok extends Actor
 {
     void dimakan(){
         Counter.add(1);
-        getWorld().removeObject(this);
     }
     
     public void act() 
@@ -32,3 +31,4 @@ public class kodok extends Actor
         }
     }    
 }
+
