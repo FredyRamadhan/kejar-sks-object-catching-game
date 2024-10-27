@@ -1,11 +1,5 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;
 
-/**
- * Write a description of class candy here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public abstract class candy extends Actor
 {
     abstract void cetakbaru();
@@ -21,8 +15,8 @@ public abstract class candy extends Actor
     public void act() 
     {
         maju();
-        if(getY()>=499){
-            setLocation(Greenfoot.getRandomNumber(300),0);
+        if(getY()>=719){
+            setLocation(Greenfoot.getRandomNumber(1280),0);
         }
         if(isTouching(kodok.class)){
             dimakan();

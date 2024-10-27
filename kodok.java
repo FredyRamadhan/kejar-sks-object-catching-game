@@ -16,10 +16,10 @@ public class kodok extends Actor
     public void act() 
     {
         if(Greenfoot.isKeyDown("right")){
-            setLocation(getX()+1, getY());
+            setLocation(getX()+4, getY());
         }
         else if(Greenfoot.isKeyDown("left")){
-            setLocation(getX()-1, getY());
+            setLocation(getX()-4, getY());
         }
         if(isTouching(no.class)){
             Counter2.add(-1);

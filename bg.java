@@ -1,21 +1,10 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;
 
-/**
- * Write a description of class bg here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class bg extends World
 {
-
-    /**
-     * Constructor for objects of class bg.
-     * 
-     */
     public bg()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(300, 500, 1); 
+        super(1280, 720, 1);
     }
 }

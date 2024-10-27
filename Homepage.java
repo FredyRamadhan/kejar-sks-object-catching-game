@@ -15,7 +15,7 @@ public class Homepage extends World
      */
     public Homepage()
     {    
-        super(300, 500, 1); 
+        super(1280, 720, 1);
         prepare();
     }
 
@@ -26,6 +26,6 @@ public class Homepage extends World
     private void prepare()
     {
         play play = new play();
-        addObject(play,146,278);
+        addObject(play,640, 400);
     }
 }

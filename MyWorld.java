@@ -15,8 +15,8 @@ public class MyWorld extends World
      */
     public MyWorld()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(300, 500, 1); 
+        // Create a new world with 1280x720 cells with a cell size of 1x1 pixels.
+        super(1280, 720, 1); 
         prepare();
     }
 
@@ -27,25 +27,25 @@ public class MyWorld extends World
     private void prepare()
     {
         kodok kodok = new kodok();
-        addObject(kodok,148,434);
+        addObject(kodok,1200,600);
         candy1 candy1 = new candy1();
-        addObject(candy1,259,69);
+        addObject(candy1,959,69);
         candy2 candy2 = new candy2();
         addObject(candy2,12,139);
         candy3 candy3 = new candy3();
-        addObject(candy3,157,43);
+        addObject(candy3,357,43);
         candy4 candy4 = new candy4();
-        addObject(candy4,285,203);
+        addObject(candy4,585,203);
         candy5 candy5 = new candy5();
-        addObject(candy5,112,227);
+        addObject(candy5,642,227);
         no1 no1 = new no1();
-        addObject(no1,189,129);
+        addObject(no1,889,129);
         no2 no2 = new no2();
         addObject(no2,40,15);
         no3 no3 = new no3();
-        addObject(no3,7,249);
+        addObject(no3,790,249);
         Counter counter = new Counter("");
-        addObject(counter,55,478);
+        addObject(counter,845,478);
         Counter2 counter2 = new Counter2("HP : ");
         addObject(counter2,246,478);
     }
