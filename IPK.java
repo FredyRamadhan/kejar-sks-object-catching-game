@@ -1,5 +1,6 @@
 import greenfoot.*;
 
+
 public class IPK extends Actor
 {
     private static final Color transparent = new Color(0,0,0,0);
