@@ -1,8 +1,9 @@
 import greenfoot.*;  
 
-public class no1 extends no
+public class no2 extends no
 {
     void cetakbaru(){
+        // Method kosong karena pembuatan objek baru ditangani di parent class
     }
     
     void maju(){
