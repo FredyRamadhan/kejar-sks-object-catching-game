@@ -1,28 +1,23 @@
 import greenfoot.*;
 
-
-public class IPK extends Actor
+public class SKSdiambil extends Actor
 {
     private static final Color transparent = new Color(0,0,0,0);
     private GreenfootImage background;
     public static int value;
     private static int target;
     private String prefix;
-    private static double nilai;
-    private static double totalNilai;
-    private static double IPK;
     
-    public IPK()
+    public SKSdiambil()
     {
         this(new String());
     }
-
-    public IPK(String prefix)
+    
+    public SKSdiambil(String prefix)
     {
-        background = getImage();
+        background = getImage(); 
         value = 0;
         target = 0;
-        nilai = 0.0;
         this.prefix = prefix;
         updateImage();
     }
@@ -36,40 +31,23 @@ public class IPK extends Actor
         else if (value > target) {
             value--;
             updateImage();
-        };
-        
-        if (nilai < totalNilai) {
-            nilai++;
-            IPK();
-            updateImage();
-        }
-        else if (nilai > totalNilai) {
-            nilai--;
-            IPK();
-            updateImage();
         }
     }
-
-    private void IPK() 
+    
+    public static void add(int score)
     {
-        double nilaiIPK = nilai / (double) value;
-        IPK = nilaiIPK;
+        target += score;
     }
-    public static void add(double nilai, int SKS)
-    {
-        totalNilai += nilai;
-        target += SKS;
-    }
-
-    public static int getValue()
+    
+    private int getValue()
     {
         return target;
     }
-
+    
     private void updateImage()
     {
         GreenfootImage image = new GreenfootImage(background);
-        GreenfootImage text = new GreenfootImage(prefix + (Math.round(IPK * 100.0) / 100.0), 22, Color.BLACK, transparent);
+        GreenfootImage text = new GreenfootImage(prefix + value + " / 24", 22, Color.BLACK, transparent);
         
         if (text.getWidth() > image.getWidth() - 20)
         {
@@ -81,5 +59,3 @@ public class IPK extends Actor
         setImage(image);
     }
 }
-
-

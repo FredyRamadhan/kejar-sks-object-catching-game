@@ -4,21 +4,24 @@ public class MyWorld extends World {
     private Nilai Nilai; // Instance variable untuk Nilai
     private MaxPelanggaran MaxPelanggaran; // Instance variable untuk MaxPelanggaran
     private IPK IPK;
+    private SKSdiambil sksdiambil;
 
     public MyWorld() {    
         // Create a new world with 1280x720 cells with a cell size of 1x1 pixels.
         super(1280, 720, 1);
         
         // Inisialisasi counter dan counter2
-        Nilai = new Nilai("Nilai: "); 
+        Nilai = new Nilai("Total Nilai: "); 
         MaxPelanggaran = new MaxPelanggaran("Max Pelanggaran : "); 
         IPK = new IPK("IPK: ");
+        sksdiambil = new SKSdiambil("SKS Diambil: ");
         
         
         // Tambahkan counter dan counter2 ke world
-        addObject(Nilai, 300, 70);
-        addObject(IPK, 650, 70);
-        addObject(MaxPelanggaran, 1000, 70);
+        addObject(Nilai, 200, 70);
+        addObject(sksdiambil, 400,70);
+        addObject(IPK, 880, 70);
+        addObject(MaxPelanggaran, 1080, 70);
         
         
         mulai(); // Panggil metode mulai untuk menambahkan objek lain

@@ -21,6 +21,10 @@ public class Karakter extends Actor
             Greenfoot.delay(1);
             Greenfoot.setWorld(new Endpage());
             getWorld().removeObject(this);
+        }else if(SKSdiambil.value==24) {
+            Greenfoot.delay(1);
+            Greenfoot.setWorld(new Endpage());
+            getWorld().removeObject(this);
         }
     }    
 }
