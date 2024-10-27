@@ -11,6 +11,6 @@ public class Homepage extends World
     private void prepare()
     {
         play play = new play();
-        addObject(play,640, 400);
+        addObject(play,640, 420);
     }
 }
