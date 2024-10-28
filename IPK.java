@@ -23,6 +23,7 @@ public class IPK extends Actor
         value = 0;
         target = 0;
         nilai = 0.0;
+        totalNilai = 0.0;
         this.prefix = prefix;
         updateImage();
     }
@@ -33,18 +34,9 @@ public class IPK extends Actor
             value++;
             updateImage();
         }
-        else if (value > target) {
-            value--;
-            updateImage();
-        };
         
         if (nilai < totalNilai) {
             nilai++;
-            IPK();
-            updateImage();
-        }
-        else if (nilai > totalNilai) {
-            nilai--;
             IPK();
             updateImage();
         }
