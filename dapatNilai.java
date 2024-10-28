@@ -10,7 +10,7 @@ public abstract class dapatNilai extends Actor
     private int delayFrame = 0;*/
     
     void dimakan(){
-        boolean checkSpawn = false;
+        //boolean checkSpawn = false;
         Nilai.add(tambahNilai());
         IPK.add(tambahNilai(), isMasukSks());
         SKSdiambil.add(isMasukSks());
