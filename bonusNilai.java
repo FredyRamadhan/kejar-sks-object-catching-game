@@ -1,17 +1,13 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class candy4 here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class bonusNilai extends dapatNilai
 {
+    private static int random;
+    //int delayTime(){return 0;}
     void spawnBaru(){
         bonusNilai bonusNilai = new bonusNilai();
-        Greenfoot.delay(4);
-        getWorld().addObject(bonusNilai,Greenfoot.getRandomNumber(300),0);
+        getWorld().addObject(bonusNilai,Greenfoot.getRandomNumber(1180)+100,0);
+        random = Greenfoot.getRandomNumber(8)-4;
     }
     double tambahNilai(){
         return 1;
@@ -20,7 +16,7 @@ public class bonusNilai extends dapatNilai
         return 0;
     }
     void maju(){
-        setLocation(getX(), getY()+2);
+        setLocation(getX()+random, getY()+4);
     }
     
     public void act() 

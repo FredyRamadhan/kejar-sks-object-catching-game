@@ -10,6 +10,7 @@ comment4.params=
 comment4.target=int\ isMasukSks()
 comment5.params=
 comment5.target=void\ dimakan()
+comment5.text=abstract\ int\ delayTime();\r\nprivate\ int\ delayFrame\ \=\ 0;
 comment6.params=
 comment6.target=void\ act()
 numComments=7

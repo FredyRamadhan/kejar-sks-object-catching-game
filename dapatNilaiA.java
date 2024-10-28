@@ -3,9 +3,9 @@ import greenfoot.*;
 public class dapatNilaiA extends dapatNilai
 {
     private static int random;
+    //int delayTime(){return 50;}
     void spawnBaru(){
         dapatNilaiA dapatNilaiA = new dapatNilaiA();
-        Greenfoot.delay(4);
         getWorld().addObject(dapatNilaiA,Greenfoot.getRandomNumber(1180)+100,0);
         random = Greenfoot.getRandomNumber(12)-6;
     }

@@ -6,13 +6,26 @@ public abstract class dapatNilai extends Actor
     abstract double tambahNilai();
     abstract void maju();
     abstract int isMasukSks();
+    /*abstract int delayTime();
+    private int delayFrame = 0;*/
     
     void dimakan(){
+        boolean checkSpawn = false;
         Nilai.add(tambahNilai());
         IPK.add(tambahNilai(), isMasukSks());
         SKSdiambil.add(isMasukSks());
-        
         spawnBaru();
+        
+        /*
+           while(checkSpawn==false){
+                if(delayFrame >= delayTime()) {
+                    delayFrame++;
+                    
+                    checkSpawn=true;
+                }   
+            }    
+           */
+        
         getWorld().removeObject(this);
     }
     

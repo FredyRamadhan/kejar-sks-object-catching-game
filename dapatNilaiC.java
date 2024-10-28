@@ -2,7 +2,7 @@ import greenfoot.*;
 
 public class dapatNilaiC extends dapatNilai
 {
-    
+    //int delayTime(){return 0;}
     void spawnBaru(){
         dapatNilaiC dapatNilaiC = new dapatNilaiC();
         getWorld().addObject(dapatNilaiC,Greenfoot.getRandomNumber(300),0);
