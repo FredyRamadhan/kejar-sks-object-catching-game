@@ -14,5 +14,5 @@ contoh:
 
     git remote add origin https://github.com/FredyRamadhan/gameJavaPBO/
 ### 6. ketik: 
-    git pull
+    git pull origin master
 ### 7. buka foldernya di greenfoot
