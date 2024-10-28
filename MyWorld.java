@@ -48,7 +48,7 @@ public class MyWorld extends World {
         addObject(dapatNilaiC, Greenfoot.getRandomNumber(1180)+100, 67);
         
         bonusNilai bonusNilai  = new bonusNilai ();
-        addObject(bonusNilai, Greenfoot.getRandomNumber(1180)+100, 203);
+        addObject(bonusNilai, Greenfoot.getRandomNumber(1180)+100, 703);
         
         //inisialisasi poin pengurang
         Pelanggaran1 Pelanggaran1 = new Pelanggaran1();
