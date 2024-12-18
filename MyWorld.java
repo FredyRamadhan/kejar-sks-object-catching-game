@@ -1,63 +1,61 @@
 import greenfoot.*; 
 
 public class MyWorld extends World {
-    private Nilai Nilai; // Instance variable untuk Nilai
-    private MaxPelanggaran MaxPelanggaran; // Instance variable untuk MaxPelanggaran
     private IPK IPK;
+    private MaxPelanggaran MaxPelanggaran;
+    private Nilai Nilai;
     private SKSdiambil sksdiambil;
+    private String playerName; 
 
     public MyWorld() {    
-        // Create a new world with 1280x720 cells with a cell size of 1x1 pixels.
-        super(1280, 720, 1);
-        
-        // Inisialisasi counter dan counter2
-        Nilai = new Nilai("Total Nilai: "); 
-        MaxPelanggaran = new MaxPelanggaran("Max Pelanggaran : "); 
+        super(1280, 720, 1); // Inisialisasi world 1280x720
+
+        // Inisialisasi objek Nilai, MaxPelanggaran, IPK, dan SKSdiambil
         IPK = new IPK("IPK: ");
+        MaxPelanggaran = new MaxPelanggaran("Max Pelanggaran : ");
+        Nilai = new Nilai("Total Nilai: ");
         sksdiambil = new SKSdiambil("SKS Diambil: ");
         
-        
-        // Tambahkan counter dan counter2 ke world
-        addObject(Nilai, 200, 70);
-        addObject(sksdiambil, 400,70);
         addObject(IPK, 880, 70);
+        addObject(Nilai, 200, 70);
+        addObject(sksdiambil, 400, 70);
         addObject(MaxPelanggaran, 1080, 70);
         
-        
-        mulai(); // Panggil metode mulai untuk menambahkan objek lain
+        inputNama(); // Input nama pemain
+        mulaiPermainan(); // Mulai permainan
     }
 
-    /**
-     * mulai program.
-     * buat beberapa objek pertama untuk memulai game nya
-     */
+    private void inputNama() {
+        playerName = Greenfoot.ask("Masukkan Nama Anda: ");
+        if (playerName == null || playerName.trim().isEmpty()) {
+            playerName = "Pemain"; 
+        }
+    }
+
+     private void mulaiPermainan() {
+        // Membaca IPK sebelumnya dari file menggunakan IPKStorage
+        double ipk = IPKStorage.readIPK(playerName);
+
+        // Kirim nama pemain dan IPK sebelumnya ke objek Karakter
+        addObject(new Karakter(playerName, IPK), 600, 600);
+        
+        mulai(); // Lanjutkan inisialisasi objek
+    }
+
     private void mulai() {
-        //inisiasi karakter
-        Karakter Karakter = new Karakter();
-        addObject(Karakter, 600, 600);
+        double ipk = IPKStorage.readIPK(playerName);
         
-        //inisialisasi poin
-        dapatNilaiA dapatNilaiA = new dapatNilaiA();
-        addObject(dapatNilaiA, Greenfoot.getRandomNumber(1180)+100, 69);
+        Karakter karakter = new Karakter(playerName, IPK);
+        addObject(karakter, 600, 600);
         
-        dapatNilaiB dapatNilaiB = new dapatNilaiB();
-        addObject(dapatNilaiB, Greenfoot.getRandomNumber(1180)+100, 139);
+        addObject(new dapatNilaiA(), Greenfoot.getRandomNumber(1180) + 100, 69);
+        addObject(new dapatNilaiB(), Greenfoot.getRandomNumber(1180) + 100, 139);
+        addObject(new dapatNilaiC(), Greenfoot.getRandomNumber(1180) + 100, 43);
+        addObject(new dapatNilaiC(), Greenfoot.getRandomNumber(1180) + 100, 67);
+        addObject(new bonusNilai(), Greenfoot.getRandomNumber(1180) + 100, 703);
         
-        dapatNilaiC dapatNilaiC = new dapatNilaiC();
-        addObject(dapatNilaiC, Greenfoot.getRandomNumber(1180)+100, 43);
-        addObject(dapatNilaiC, Greenfoot.getRandomNumber(1180)+100, 67);
-        
-        bonusNilai bonusNilai  = new bonusNilai ();
-        addObject(bonusNilai, Greenfoot.getRandomNumber(1180)+100, 703);
-        
-        //inisialisasi poin pengurang
-        Pelanggaran1 Pelanggaran1 = new Pelanggaran1();
-        addObject(Pelanggaran1, Greenfoot.getRandomNumber(1180)+100, Greenfoot.getRandomNumber(300));
-        
-        Pelanggaran2 Pelanggaran2 = new Pelanggaran2();
-        addObject(Pelanggaran2, Greenfoot.getRandomNumber(1180)+100, Greenfoot.getRandomNumber(300));
-        
-        Pelanggaran3 Pelanggaran3 = new Pelanggaran3();
-        addObject(Pelanggaran3, Greenfoot.getRandomNumber(1180)+100, Greenfoot.getRandomNumber(300));
+        addObject(new Pelanggaran1(), Greenfoot.getRandomNumber(1180) + 100, Greenfoot.getRandomNumber(300));
+        addObject(new Pelanggaran2(), Greenfoot.getRandomNumber(1180) + 100, Greenfoot.getRandomNumber(300));
+        addObject(new Pelanggaran3(), Greenfoot.getRandomNumber(1180) + 100, Greenfoot.getRandomNumber(300));
     }
 }

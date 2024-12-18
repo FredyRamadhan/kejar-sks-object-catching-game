@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=IPKStorage
+comment1.params=playerName
+comment1.target=double\ readIPK(java.lang.String)
+comment2.params=playerName\ ipk
+comment2.target=void\ saveIPK(java.lang.String,\ double)
+numComments=3

@@ -1,7 +1,11 @@
 #BlueJ class context
 comment0.target=Karakter
-comment1.params=
-comment1.target=void\ dimakan()
+comment1.params=playerName\ IPK
+comment1.target=Karakter(java.lang.String,\ IPK)
 comment2.params=
-comment2.target=void\ act()
-numComments=3
+comment2.target=java.lang.String\ getPlayerName()
+comment3.params=
+comment3.target=void\ dimakan()
+comment4.params=
+comment4.target=void\ act()
+numComments=5
