@@ -8,6 +8,6 @@ Clone this repository<br/><br/>
 <br/>
 Open the folder in Greenfoot and run
 <br/><br/>
-- [Febrian Ernanda](https://github.com/febrianernanda)<br/>
-- [Faiz Azraf](https://github.com/faizazraf05)<br/>
-- [Fredy Ramadhan](https://github.com/FredyRamadhan/)<br/>
+- [Faiz Azraf](https://github.com/faizazraf05)
+- [Febrian Ernanda](https://github.com/febrianernanda)
+- [Fredy Ramadhan](https://github.com/FredyRamadhan/)
